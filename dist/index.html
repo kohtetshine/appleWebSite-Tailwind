@@ -9,11 +9,17 @@
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Apple</title>
-    
+    <style>
+    @media(min-width:550px) {
+        .min-h-home-lg {
+        min-height:70vh
+        }
+    }
+    </style>
 </head>
 
 <body>
-    <nav class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-center px-2 py-3 bg-black">
+    <nav class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 bg-black">
         <div class="container px-4 mx-auto flex flex-wrap items-center justify-between">
             <div class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
                 <a href="#home" class="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white">Home</a>
@@ -24,21 +30,21 @@
             <div class="lg:flex flex-grow items-center bg-white lg:bg-transparent lg:shadow-none hidden" id="menu">
                 <ul class="flex flex-col lg:flex-row list-none mr-auto">
                     <li class="flex items-center"> 
-                        <a href="#ipad" class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 oy-4 lg:py-2 flex items-center text-xs uppercase font-bold"><i class="lg:text-gray-300 text-gray-500 fas fa-tablet text-lg leading-lg mr-2"></i>Ipad</a>
+                        <a href="#ipad" class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"><i class="lg:text-gray-300 text-gray-500 fas fa-tablet text-lg leading-lg mr-2"></i>Ipad</a>
                     </li>
                     <li class="flex items-center">
                         <a href="#macbook"
-                            class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 oy-4 lg:py-2 flex items-center text-xs uppercase font-bold"><i
+                            class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"><i
                                 class="lg:text-gray-300 text-gray-500 fas fa-laptop text-lg leading-lg mr-2"></i>MacBook</a>
                     </li>
                     <li class="flex items-center">
                         <a href="#team"
-                            class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 oy-4 lg:py-2 flex items-center text-xs uppercase font-bold"><i
+                            class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"><i
                                 class="lg:text-gray-300 text-gray-500 fas fa-users text-lg leading-lg mr-2"></i>Team</a>
                     </li>
                     <li class="flex items-center">
                         <a href="#contact"
-                            class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 oy-4 lg:py-2 flex items-center text-xs uppercase font-bold"><i
+                            class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"><i
                                 class="lg:text-gray-300 text-gray-500 fas fa-address-card text-lg leading-lg mr-2"></i>Contact Us</a>
                     </li>
                 </ul>
@@ -60,7 +66,7 @@
                         <button
                             class="bg-white text-gray-800 active:bg-gray-100 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3"
                             type="button">
-                            <i class="fa fa-arrow-circle-down"></i> Buy New Macbook
+                            <i class="fa fa-arrow-circle-down mr-2"></i> Buy New Macbook
                         </button>
                     </li>
                 </ul>
@@ -71,20 +77,68 @@
     <main>
         <div class="relative pt-16 lg:pb-32 flex items-center justify-center content-center min-h-home-lg" id="home">
             <div class="absolute w-full h-full">
-                    <video class="top-0 mx-auto bg-contain w-full" 
-                        src="../assets/home.mp4"
-                        autoplay muted></video>
+                    <video autoplay muted class="top-0 bg-center">
+                        <source
+                            src="https://www.apple.com/105/media/us/macbook-pro-13/2020/f2b14406-42ad-405e-bfa0-71b52a0bfd67/anim/chip/large_2x.mp4">
+                    </video>
             </div>
             <div class="container relative mx-auto hidden md:block">
                 <div class="items-center flex flex-wrap">
                     <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
                         <div class="pr-12">
-                            <h1 class="text-white font-semibold text-5xl mt-32">Welcom to Apple</h1>
+                            <h1 class="text-white font-semibold text-5xl -mt-32">Welcome to Apple</h1>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <section class="pb-20 mt-80 bg-gray-100">
+            <div class="container mx-auto px-4">
+                <div class="flex flex-wrap">
+                    <div class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">
+                        <div
+                            class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+                            <div class="px-4 py-5 flex-auto">
+                                <div
+                                    class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400">
+                                    <i class="fas fa-tablet"></i>
+                                </div>
+                                <h6 class="text-xl font-semibold">Ipad Pro</h6>
+                                <p class="mt-2 mb-4 text-gray-600">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea numquam quibusdam tempora ullam amet qui, praesentium nulla repellendus doloremque repellat?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-4/12 px-4 text-center">
+                        <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+                            <div class="px-4 py-5 flex-auto">
+                                <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-blue-400">
+                                    <i class="fas fa-laptop"></i>
+                                </div>
+                                <h6 class="text-xl font-semibold">MacBook</h6>
+                                <p class="mt-2 mb-4 text-gray-600">Lorem ipsum dolor sit amet consectetur, adipisicing
+                                    elit. Ea numquam quibusdam tempora ullam amet qui, praesentium nulla repellendus
+                                    doloremque repellat?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">
+                        <div
+                            class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+                            <div class="px-4 py-5 flex-auto">
+                                <div
+                                    class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400">
+                                    <i class="fas fa-mobile"></i>
+                                </div>
+                                <h6 class="text-xl font-semibold">IPhone</h6>
+                                <p class="mt-2 mb-4 text-gray-600">Lorem ipsum dolor sit amet consectetur, adipisicing
+                                    elit. Ea numquam quibusdam tempora ullam amet qui, praesentium nulla repellendus
+                                    doloremque repellat?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 </body>
 
