@@ -12,8 +12,8 @@
     
 </head>
 
-<body class="bg-black">
-    <nav class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-center px-2 py-3">
+<body>
+    <nav class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-center px-2 py-3 bg-black">
         <div class="container px-4 mx-auto flex flex-wrap items-center justify-between">
             <div class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
                 <a href="#home" class="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white">Home</a>
@@ -67,6 +67,25 @@
             </div>
         </div>
     </nav>
+
+    <main>
+        <div class="relative pt-16 lg:pb-32 flex items-center justify-center content-center min-h-home-lg" id="home">
+            <div class="absolute w-full h-full">
+                    <video class="top-0 mx-auto bg-contain w-full" 
+                        src="../assets/home.mp4"
+                        autoplay muted></video>
+            </div>
+            <div class="container relative mx-auto hidden md:block">
+                <div class="items-center flex flex-wrap">
+                    <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
+                        <div class="pr-12">
+                            <h1 class="text-white font-semibold text-5xl mt-32">Welcom to Apple</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 
 <script>
